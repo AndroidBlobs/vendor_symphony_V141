@@ -1,0 +1,6 @@
+service combined-hals /vendor/bin/hw/combinedhals-service
+    class hal
+    user system
+    group system mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
